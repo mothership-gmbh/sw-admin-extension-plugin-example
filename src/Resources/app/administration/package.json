@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Mothership GmbH",
+  "license": "MIT",
   "dependencies": {
     "@shopware-ag/admin-extension-sdk": "^3.0.3",
     "vue": "^2.7.14",

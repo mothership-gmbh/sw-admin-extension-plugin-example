@@ -13,6 +13,21 @@
     "label": {
       "de-DE": "Admin extension example plugin",
       "en-GB": "Admin extension example plugin"
+    },
+    "description": {
+      "de-DE": "This plugin is an example to use the Shopware Extension Example to understand how to use it for the plugin, You can also use it for reference use for application development",
+      "en-GB": "This plugin is an example to use the Shopware Extension Example to understand how to use it for the plugin. You can also use it for reference use for application development."
+    },
+    "manufacturerLink": {
+      "de-DE": "https://github.com/mothership-gmbh/sw-admin-extension-plugin-example",
+      "en-GB": "https://github.com/mothership-gmbh/sw-admin-extension-plugin-example"
+    },
+    "supportLink": {
+      "de-DE": "https://github.com/mothership-gmbh/sw-admin-extension-plugin-example/issues",
+      "en-GB": "https://github.com/mothership-gmbh/sw-admin-extension-plugin-example/issues"
     }
+  },
+  "require": {
+    "shopware/core": "~6.4.0 || ~6.5.0"
   }
 }

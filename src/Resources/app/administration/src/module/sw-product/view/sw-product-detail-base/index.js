@@ -1,6 +1,6 @@
 import { ui } from '@shopware-ag/admin-extension-sdk'
 import { addCard } from '../../../../helper/card.helper'
-import { isRegisteredSection } from '../../../../helper/registeredSections.helper'
+import { isRegisteredSection } from '../../../../helper/registered-sections.helper'
 
 Shopware.Component.override('sw-product-detail-base', {
     watch: {
