@@ -1,0 +1,24 @@
+{% block ms_product_detail_card_component %}
+<div>
+    This modal was called from <b>src/Resources/app/administration/src/module/sw-dashboard/sw-dashboard-index</b><br/>
+    And the content loaded from <b>src/Resources/app/administration/src/locations/index.js</b>
+    <br/>
+<pre>
+// Add the component name to the specific location
+Shopware.State.commit('sdkLocation/addLocation', {
+    // The locationId to display the component
+    locationId: 'ms-demo-plugin-dashboard-modal-location',
+    // Display the content within the component
+    componentName: 'ms-dashboard-modal-component'
+})
+</pre>
+
+    <sw-button
+        class="ms-product-detail-card-component-button"
+        :is-loading="isLoading"
+        variant="primary"
+        @click="onOpenProductDetailPage">
+        See the demo in the product detail
+    </sw-button>
+</div>
+{% endblock %}

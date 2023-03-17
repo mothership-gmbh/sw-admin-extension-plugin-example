@@ -1,0 +1,14 @@
+{
+  "name": "administration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@shopware-ag/admin-extension-sdk": "^3.0.3",
+    "vue": "^2.7.14",
+    "vue-i18n": "^8.28.2"
+  }
+}

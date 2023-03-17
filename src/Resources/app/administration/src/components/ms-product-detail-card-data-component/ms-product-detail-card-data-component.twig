@@ -1,0 +1,27 @@
+{% block ms_product_detail_card_data_component %}
+    <div style="background-color: antiquewhite;">
+        <h3>Product preview with the transfer data from the card component</h3>
+        <div><b>{{ $tc('sw-product.basicForm.labelTitle') }}:</b> {{ product.translated.name }}</div>
+        <div><b>{{ $tc('sw-product.basicForm.labelProductNumber') }}:</b> {{ product.productNumber }}</div>
+
+        <div>
+            <br/>
+            <p>Use helper/card.helper.js to create a processed card for passing data</p>
+            <p>Then we can create a card like this</p>
+<pre>
+addCard({
+    component: 'card',
+    positionId: 'sw-product-detail-base-media__before',
+    props: {
+        title: 'Custom card with passing product data',
+        subtitle: 'I am from Mothership',
+        locationId: 'ms-production-extension-example',
+    },
+    passData: {
+        product: this.product // The data you want to passing to the component
+    }
+})
+</pre>
+        </div>
+    </div>
+{% endblock %}
