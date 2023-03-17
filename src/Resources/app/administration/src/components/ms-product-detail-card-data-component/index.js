@@ -1,5 +1,6 @@
 import template from './ms-product-detail-card-data-component.twig';
 import { getData } from "../../helper/card.helper";
+import {data} from "@shopware-ag/admin-extension-sdk";
 
 Shopware.Component.register('ms-product-detail-card-data-component', {
     template,
@@ -12,7 +13,14 @@ Shopware.Component.register('ms-product-detail-card-data-component', {
 
     created() {
         // Get product data we have set after we are creating the card
-        const { product } = getData();
-        this.product = product;
+        const { productId } = getData();
+        this.getProduct(productId)
     },
+
+    methods: {
+        async getProduct(productId) {
+            const productRepository = data.repository('product');
+            this.product = await productRepository.get(productId);
+        }
+    }
 })

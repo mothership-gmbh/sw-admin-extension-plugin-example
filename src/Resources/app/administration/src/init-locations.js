@@ -1,7 +1,7 @@
 import { location } from '@shopware-ag/admin-extension-sdk';
-import '../components/ms-product-detail-card-component';
-import '../components/ms-product-detail-card-data-component';
-import '../components/ms-dashboard-modal-component';
+import './components/ms-product-detail-card-component';
+import './components/ms-product-detail-card-data-component';
+import './components/ms-dashboard-modal-component';
 
 /**
  * You can see the document of the locations in the link below

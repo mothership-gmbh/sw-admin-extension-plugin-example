@@ -1,8 +1,13 @@
 {% block ms_product_detail_card_data_component %}
     <div style="background-color: antiquewhite;">
         <h3>Product preview with the transfer data from the card component</h3>
-        <div><b>{{ $tc('sw-product.basicForm.labelTitle') }}:</b> {{ product.translated.name }}</div>
-        <div><b>{{ $tc('sw-product.basicForm.labelProductNumber') }}:</b> {{ product.productNumber }}</div>
+        <template v-if="product">
+            <div><b>{{ $tc('sw-product.basicForm.labelTitle') }}:</b> {{ product.translated.name }}</div>
+            <div><b>{{ $tc('sw-product.basicForm.labelProductNumber') }}:</b> {{ product.productNumber }}</div>
+        </template>
+        <template v-else>
+            <div><b>THIS IS A NEW PRODUCT</b></div>
+        </template>
 
         <div>
             <br/>
